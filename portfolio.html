@@ -27,17 +27,23 @@
             <div class="container header-content">
                 <nav class="main-nav">
                     <!-- Logo -->
-                    <a class="logo" href="./index.html">Web<span class=" accent top">Studio</span></a>
+                    <a class="logo" href="./index.html">Web<span class="logo__text ">Studio</span></a>
                     <!-- Nav -->
                     <ul class="site-nav list">
-                        <li class="item nav-thumb">
-                            <a class="link " href="./index.html">Студия</a>
+                        <li class="site-nav__item">
+                            <div class="site-nav__thumb">
+                                <a class="site-nav__link " href="./index.html">Студия</a>
+                            </div>
                         </li>
-                        <li class="item nav-thumb">
-                            <a class="link current" href="./portfolio.html">Портфолио</a> 
+                        <li class="site-nav__item">
+                            <div class="site-nav__thumb">
+                                <a class="site-nav__link site-nav__link--current" href="./portfolio.html">Портфолио</a>
+                            </div>
                         </li>
-                        <li class="item nav-thumb">
-                            <a class="link" href="">Контакты</a>
+                        <li class="site-nav__item">
+                            <div class="site-nav__thumb">
+                                <a class="site-nav__link" href="">Контакты</a>
+                            </div>
                         </li>
                     </ul>
                 </nav>
@@ -261,7 +267,7 @@
         <div class="container footer-content">
             <!-- Contact us -->
             <div class="footer-contacts">
-                <a class="logo" href="./index.html">Web<span class="accent bottom">Studio</span></a>
+                <a class="logo" href="./index.html">Web<span class="logo__text logo__text--inverse">Studio</span></a>
     
                 <address class="contacts-bottom">
     
@@ -315,7 +321,6 @@
                     <div class="sub-wrapper">
                         <b class="text">Подпишитесь на рассылку</b>
                         <div>
-                            <label for="sub-email"></label>
                             <input class="sub-input" type="email" name="sub-email" id="sub-email" placeholder="E-mail">
                         </div>
                     </div>
