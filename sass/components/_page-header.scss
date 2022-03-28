@@ -1,0 +1,18 @@
+.page-header {
+  border-bottom: 1px solid var(--primary-border-color);
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Main Nav */
+
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+.header__logo {
+  margin-right: 93px;
+}
+/* Logo */

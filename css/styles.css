@@ -88,11 +88,11 @@ ul {
 
 /* Main Nav */
 
-.main-nav {
+.header__nav {
   display: flex;
   align-items: center;
 }
-.main-nav .logo {
+.header__logo {
   margin-right: 93px;
 }
 /* Logo */
@@ -455,10 +455,10 @@ ul {
 .section:nth-child(3) {
   padding-top: 0px;
 }
-.section.secondary {
+.section--secondary {
   background-color: var(--primary-filter-color);
 }
-.section-title {
+.section__title {
   margin-bottom: 50px;
 
   font-weight: 700;
