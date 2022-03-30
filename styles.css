@@ -78,10 +78,10 @@ ul {
 }
 /* page-header */
 
-.page-header {
+.header {
   border-bottom: 1px solid var(--primary-border-color);
 }
-.header-content {
+.header__content {
   display: flex;
   justify-content: space-between;
 }
@@ -106,10 +106,10 @@ ul {
   text-decoration: none;
 }
 
-.page-header__logo {
+.logo__text--black {
   color: var(--primary-black-color);
 }
-.page-footer__logo {
+.logo__text--white {
   color: var(--primary-white-color);
 }
 .logo__text {
@@ -220,7 +220,7 @@ ul {
     ),
     url(../images/hero/img-1.jpg);
 }
-.centered {
+.hero--centered {
   text-align: center;
 }
 .hero__title {
@@ -394,11 +394,9 @@ ul {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form__area {
-  margin-bottom: 20px;
-}
-.form__area {
   resize: none;
   padding: 12px 16px;
+  margin-bottom: 20px;
   outline: 0;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -505,7 +503,7 @@ ul {
 }
 
 /* Work */
-.work-list {
+.work__list {
   display: flex;
   flex-wrap: wrap;
 }
@@ -547,7 +545,7 @@ ul {
 .workers__item:not(:nth-child(4n)) {
   margin-right: 30px;
 }
-.description-workers {
+.workers__description {
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -633,7 +631,7 @@ ul {
 }
 
 /* footer */
-.page__footer {
+.footer {
   padding-bottom: 60px;
   padding-top: 60px;
 
@@ -643,14 +641,16 @@ ul {
   display: flex;
   align-items: baseline;
 }
-/* Contact us*/
-.footer__contacts {
-  margin-right: 70px;
-}
 .footer__logo {
   margin-bottom: 20px;
   display: inline-block;
 }
+/* Contact us*/
+
+.footer__contacts {
+  margin-right: 70px;
+}
+
 .contacts-bottom__item:not(:last-child) {
   margin-bottom: 9px;
 }

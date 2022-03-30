@@ -1,23 +1,23 @@
-.footer__network {
-  margin-right: 93px;
-}
-.footer__text {
-  margin-bottom: 20px;
+.networks__link {
+  &--white {
+    background: $secondaryIconColor;
+    fill: $primaryWhiteColor;
 
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &--white:hover,
+  &--white:focus {
+    background-color: $accentColor;
+  }
+}
 
-  color: var(--primary-white-color);
-}
-.networks__link--white {
-  background: var(--secondary-icon-color);
-  fill: var(--primary-white-color);
+// .networks__link--white {
+//   background: $secondaryIconColor;
+//   fill: $primaryWhiteColor;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.networks__link--white:hover,
-.networks__link--white:focus {
-  background-color: var(--accent-color);
-}
+//   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
+// .networks__link--white:hover,
+// .networks__link--white:focus {
+//   background-color: $accentColor;
+// }
