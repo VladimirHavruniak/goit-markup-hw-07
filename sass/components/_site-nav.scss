@@ -1,35 +1,38 @@
 .site-nav {
   display: flex;
+
   &__item:not(:last-child) {
     margin-right: 50px;
   }
-  &__link {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    display: block;
 
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: $primaryTitleColor;
-    text-decoration: none;
-
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  &__link:hover,
-  &__link:focus {
-    color: $accentColor;
-  }
-  &__link--current {
-    color: $accentColor;
-  }
   &__thumb {
     position: relative;
   }
-  &__link--current::after {
+}
+.site-nav__link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $primaryTitleColor;
+  text-decoration: none;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+  &--current {
+    color: $accentColor;
+  }
+  &--current::after {
     content: "";
     position: absolute;
     display: inline-block;
