@@ -360,7 +360,7 @@ ul {
 .input__wrapper {
   position: relative;
 }
-.form__input {
+.input__form {
   padding: 12px 42px;
   display: block;
   width: 100%;
