@@ -17,9 +17,6 @@
   opacity: 0;
   pointer-events: none;
 }
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.9);
-}
 .modal {
   position: relative;
   display: block;
@@ -37,32 +34,37 @@
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal__button {
-  position: absolute;
-  right: 8px;
-  top: 8px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: auto;
-  padding: 0;
-  width: 30px;
-  height: 30px;
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+  &__button {
+    position: absolute;
+    right: 8px;
+    top: 8px;
 
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    padding: 0;
+    width: 30px;
+    height: 30px;
 
-  background-color: inherit;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+
+    background-color: inherit;
+  }
 }
 
 .modal__icon {
   fill: $primaryBlackColor;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal__button:hover .modal__icon,
-.modal__button:focus .modal__icon {
-  fill: $accentColor;
+
+  .modal__button:hover &,
+  .modal__button:focus & {
+    fill: $accentColor;
+  }
 }

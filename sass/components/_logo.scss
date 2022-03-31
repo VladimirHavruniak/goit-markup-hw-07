@@ -5,20 +5,20 @@
   line-height: 1.19;
   color: $accentColor;
   text-decoration: none;
+}
+.logo__text {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  &__text--black {
+  &--black {
     color: $primaryBlackColor;
   }
-  &__text--white {
+  &--white {
     color: $primaryWhiteColor;
   }
-  &__text {
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  &__text:hover,
-  &__text:focus {
+  &:hover,
+  &:focus {
     color: $accentColor;
   }
 }
